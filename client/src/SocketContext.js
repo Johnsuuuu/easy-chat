@@ -33,9 +33,7 @@ const ContextProvider = ({ children }) => {
       .getUserMedia({ video: true, audio: true })
       .then((currentStream) => {
         setStream(currentStream);
-        if (myVideo.current) {
-          myVideo.current.srcObject = currentStream;
-        }
+        myVideo.current.srcObject = currentStream;
       });
 
     socket.on('me', (id) => {
