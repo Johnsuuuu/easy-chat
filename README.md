@@ -18,23 +18,21 @@ Easy Chat is a video chat application that allows users to call each other and c
 
 [![Screen-Shot-2022-08-12-at-11-17-15-AM.png](https://i.postimg.cc/rs6BMRWY/Screen-Shot-2022-08-12-at-11-17-15-AM.png)](https://postimg.cc/mzwXSDmQ)
 ## Technologies
-- React and Material-UI for frontend
-- Express and Node for backend
-- MongoDB for database
-- Passport JWT for authentication
-- Redux for state management
+- React and Ant Design for frontend
+- Express, Node, and Socket.io for WebRTC backend signaling server
+- simple-peer for P2P connection
+- Heroku for backend hosting
+- AWS Amplify for frontend hosting
 ## Quick Start
 ```javascript
 // Install dependencies for server & client
-npm install && npm run client-install
-
-// Start your local MongoDB server
-mongod
+npm install && cd client && npm install
 
 // Run client & server with concurrently
+// you should be in the root folder at this moment
 npm run dev
 
 // Server runs on http://localhost:5000 and client on http://localhost:3000
 ```
 ## Deployed Application 
-http://ec2-52-87-32-43.compute-1.amazonaws.com
+https://prod.d39luuly459lu.amplifyapp.com
